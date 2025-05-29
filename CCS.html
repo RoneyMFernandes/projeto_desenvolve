@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Fontes e Cores</title>
+  <style>
+    html { font-size: 20px; }
+
+    html h1 { font-size: 2rem; }            /* 40px */
+    h1 > .principal { font-size: 1.4em; }    /* 56px */
+    html .secundario { font-size: 1.4rem; }  /* 28px */
+
+    .cores {
+      display: flex;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .cor {
+      width: 150px;
+      height: 100px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .original    { background-color: rgb(219, 78, 68); }
+    .clara       { background-color: rgb(224, 105, 96); }
+    .escura      { background-color: rgb(186, 66, 58); }
+  </style>
+</head>
+<body>
+
+  <h1>Título <span class="principal">Principal</span></h1>
+  <p class="secundario">Texto Secundário</p>
+
+  <div class="cores">
+    <div class="cor original">Original</div>
+    <div class="cor clara">Mais Clara</div>
+    <div class="cor escura">Mais Escura</div>
+  </div>
+
+</body>
+</html>
