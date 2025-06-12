@@ -1,0 +1,132 @@
+/* Paleta de Cores */
+:root {
+  --cor-fundo: #f4f4f4;
+  --cor-fonte: #333333;
+  --cor-destaque: #007BFF;
+  --cor-escura: #222222;
+  --cor-clara: #ffffff;
+}
+
+/* Estilo básico da página */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-fonte);
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1280px;
+}
+
+/* Estilo para parágrafos */
+p {
+  text-indent: 1em;
+}
+
+/* Estilo para elementos de destaque */
+h1, h2, h3 {
+  color: var(--cor-destaque);
+  text-align: center;
+}
+
+/* Tamanhos dos títulos */
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* Alinhamento da seção de resumo */
+#zen-summary {
+  text-align: center;
+}
+
+/* Espaçamento entre linhas na seção principal */
+#zen-supporting p {
+  line-height: 1.5;
+}
+
+/* Abreviaturas em small-caps */
+abbr {
+  font-variant: small-caps;
+}
+
+/* Estilo para links */
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Altura da seção de introdução */
+#zen-intro {
+  height: 550px;
+}
+
+/* Remoção do container #design-archives */
+#design-archives {
+  display: none;
+}
+
+/* Estilização do cabeçalho com fundo escuro e fonte clara */
+header {
+  background-color: var(--cor-escura);
+  color: var(--cor-clara);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Título principal com espaçamento lateral */
+header h1 {
+  margin-left: 1em;
+}
+
+/* Cabeçalho secundário ao lado */
+header h2 {
+  margin-right: 1em;
+}
+
+/* Painel lateral - menus */
+.sidebar ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1em; /* Espaçamento entre itens */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Rodapé com contraste e espaçamento */
+footer {
+  background-color: var(--cor-escura);
+  color: var(--cor-clara);
+  margin: 4%;
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  border: 2px solid var(--cor-clara);
+  padding: 0.5em;
+  margin: 0.5em;
+  color: var(--cor-clara);
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: var(--cor-clara);
+  color: var(--cor-escura);
+}
