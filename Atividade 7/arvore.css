@@ -109,3 +109,59 @@ footer a:hover {
   background-color: #fff;
   color: #222;
 }
+
+#zen-benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 2em; /* Espaçamento entre texto e título */
+}
+
+#zen-participation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#zen-participation > h3 {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;     /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente (opcional) */
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+#zen-participation > p {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  padding: 0 1em;
+}
+
+/* Agrupando os parágrafos em uma segunda coluna com flexbox */
+@media (min-width: 600px) {
+  #zen-participation {
+    flex-wrap: nowrap;
+  }
+
+  #zen-participation > h3 {
+    flex: 1 1 50%;
+  }
+
+  #zen-participation > p {
+    flex: 1 1 50%;
+  }
+}
+#zen-benefits {
+  border-top: 2px solid #ccc;
+}
+
+#zen-participation {
+  border-top: 2px solid #ccc;
+}
+
+#zen-requirements {
+  border-bottom: 2px solid #ccc;
+}
+
+
