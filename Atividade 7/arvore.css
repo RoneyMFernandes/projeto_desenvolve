@@ -71,6 +71,11 @@ header h2 {
 #design-archives li {
   margin-bottom: 1em;
   text-align: center;
+  border-top: 1px solid #ccc; /* Separador superior em todos */
+}
+
+#design-archives li:last-child {
+  border-bottom: 1px solid #ccc; /* Separador inferior no último */
 }
 
 /* ====== Seções principais ====== */
@@ -83,6 +88,15 @@ h3 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.25em;
   margin-bottom: 0.75em;
+}
+
+/* Destaque da primeira letra do primeiro parágrafo da seção principal */
+.main p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: 'Georgia', serif;
+  float: left;
+  line-height: 1;
+  padding-right: 0.1em;
 }
 
 /* ====== Rodapé ====== */
@@ -110,16 +124,20 @@ footer a:hover {
   color: #222;
 }
 
+/* ====== Benefícios ====== */
 #zen-benefits {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centraliza verticalmente */
   gap: 2em; /* Espaçamento entre texto e título */
+  border-top: 2px solid #ccc;
 }
 
+/* ====== Participação ====== */
 #zen-participation {
   display: flex;
   flex-wrap: wrap;
+  border-top: 2px solid #ccc;
 }
 
 #zen-participation > h3 {
@@ -152,16 +170,23 @@ footer a:hover {
     flex: 1 1 50%;
   }
 }
-#zen-benefits {
-  border-top: 2px solid #ccc;
-}
 
-#zen-participation {
-  border-top: 2px solid #ccc;
-}
-
+/* ====== Requisitos ====== */
 #zen-requirements {
   border-bottom: 2px solid #ccc;
 }
 
+/* ====== Estilização dos Links ====== */
+a {
+  color: #1f295c; /* Cor de destaque */
+  font-weight: bold;
+  text-decoration: none;
+}
 
+a:hover {
+  color: #3a4ba0; /* Tonalidade diferente no hover */
+}
+
+a:visited {
+  font-weight: normal;
+}
