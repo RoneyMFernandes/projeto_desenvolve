@@ -71,7 +71,7 @@ header h2 {
 #design-archives li {
   margin-bottom: 1em;
   text-align: center;
-  border-top: 1px solid #ccc; /* Separador superior em todos */
+  border-top: 1px solid #ccc; /* Separador superior */
 }
 
 #design-archives li:last-child {
@@ -189,4 +189,64 @@ a:hover {
 
 a:visited {
   font-weight: normal;
+}
+
+/* ====== Layout Responsivo: Mobile ====== */
+@media (max-width: 767px) {
+  /* Menu volta à posição original e ocupa a largura total */
+  #design-archives {
+    position: static;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  /* Remove a borda lateral da .explanation */
+  .explanation {
+    width: 100%;
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Flexbox vertical (empilhado) */
+  #zen-benefits,
+  #zen-participation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Cabeçalho sem altura fixa */
+  #zen-intro {
+    height: auto;
+  }
+
+  /* Remove espaçamento inicial dos parágrafos */
+  .main p {
+    text-indent: 0;
+  }
+}
+
+/* ====== Estilo para Impressão ====== */
+@media print {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #000;
+  }
+
+  header[role="banner"] {
+    background-color: #fff;
+    color: #000;
+  }
+
+  footer {
+    background-color: #fff;
+    color: #000;
+    border-top: 1px solid #000;
+  }
+
+  footer a {
+    color: #000;
+    border-color: #000;
+  }
 }
